@@ -1,0 +1,41 @@
+[class*="icon-"] {
+    &::before {
+        position: relative;
+        top: 2px;
+    }
+}
+
+.l-container,
+[class^="l-container--"] {
+    width:90%;
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.l-container--column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.l-container--row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:20px;
+    @include from(medium){
+        align-items: center;
+    }
+    
+    @include from(large){
+        grid-template-columns: 1fr 1fr;
+    }
+    // display: flex;
+    // justify-content: space-between;
+    // flex-wrap: wrap;
+}
+
+.title-section {
+    text-align: center;
+}

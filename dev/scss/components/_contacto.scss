@@ -1,0 +1,50 @@
+.Contacto {
+    padding-top:30px;
+    padding-bottom: 30px;
+    @include from(medium) {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @include from(large) {
+        width: 50%;
+    }
+    &__formulario {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__input, &__mensaje, &__boton {
+        padding:1rem .5rem;
+    }
+    &__input, &__mensaje {
+        border:2px solid $borderColor;
+    }
+
+    &__input {
+        width:100%;
+        margin-bottom: 1rem;
+
+        @include from(medium){
+            width:49%;
+        }
+
+        
+    }
+
+    &__mensaje {
+        width:100%;
+        margin-bottom: 1rem;
+    }
+
+    &__boton {
+        width: 100%;
+        background: $firstColor;
+        @include var(background, firstColor);
+        font-size:1.2rem;
+        color:#fff;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,23 @@
+// config 
+@import "config/vars";
+@import "config/mixins";
+
+//theme
+@import "theme/colors";
+@import "theme/_tipography";
+
+//base
+@import "layouts/layouts";
+
+//base
+@import "base/base";
+
+//components
+@import "components/header";
+@import "components/nav";
+@import "components/me";
+@import "components/sobremi";
+@import "components/habilidades";
+@import "components/portafolio";
+@import "components/contacto";
+@import "components/footer";

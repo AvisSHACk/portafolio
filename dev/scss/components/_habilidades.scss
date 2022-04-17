@@ -1,0 +1,40 @@
+.Habilidades {
+    @include from(medium) {
+        width: 70%;
+        justify-self: center;
+    }
+
+    @include from(large) {
+        width: 100%;
+        justify-self: start;
+    }
+
+
+    width: 100%;
+    &__title {
+        text-align: center;
+        @include from(large) {
+            text-align: left;
+        }
+    }
+
+    &__imagesContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:20px;
+
+        @include from(medium) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    &__imageContainer {
+        margin: 0;
+        border:2px solid $borderColor;
+        border-radius: 12px;
+        padding: 37px;
+        @include from(medium) {
+
+        }
+    }
+}

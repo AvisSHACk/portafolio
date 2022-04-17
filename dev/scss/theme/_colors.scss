@@ -1,0 +1,17 @@
+$vars:(
+    firstColor:#5352ed,
+    secondColor: #2f3542,
+    borderColor:#BEBEBE,
+    textColor:#fff
+);
+
+$firstColor:map-get($vars, firstColor);
+$secondColor:map-get($vars, secondColor);
+$borderColor: map-get($vars, borderColor);
+$textColor:map-get($vars, textColor);
+
+:root {
+    @each $key, $value in $vars {
+        --#{$key}: #{$value};
+    }
+}
