@@ -10,8 +10,9 @@
     z-index: 1;
 
     @include from(medium) {
-        position: static;
-        width:auto;
+        position: absolute;
+        right:0;
+        width:100%;
         height: auto;
         background: none;
         padding-top: 0;

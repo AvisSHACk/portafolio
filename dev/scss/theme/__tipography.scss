@@ -21,6 +21,9 @@
 }
 
 .h3 {
-    font-size:24px;
-    padding-bottom: 20px;
+    display: table;
+    border-bottom:8px solid $buttonColor;
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding-bottom: 0.8rem;
 }

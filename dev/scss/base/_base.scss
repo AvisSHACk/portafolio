@@ -12,8 +12,10 @@ body {
     margin:0;
     font-size:16px;
     font-family: 'Open Sans', sans-serif;
-    background:#fff;
-    color:#000;
+    background:$firstColor;
+    @include var(background, firstColor);
+    color:$textColor;
+    @include var(color, textColor);
 }
 
 p {
@@ -33,4 +35,8 @@ input, button, textarea {
 h1, h2,  h3, h4, h5, h6 {
     margin-top: 0;
     margin-bottom: 0;
+}
+
+a {
+    display: block;
 }

@@ -10,6 +10,13 @@
     @include from(large) {
         width: 50%;
     }
+
+    &__title {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
     &__formulario {
         display: flex;
         flex-wrap: wrap;
@@ -20,7 +27,9 @@
         padding:1rem .5rem;
     }
     &__input, &__mensaje {
-        border:2px solid $borderColor;
+        background: $secondColor;
+        @include var(background, secondColor);
+        border:2px solid $borderColor2;
     }
 
     &__input {
@@ -41,8 +50,8 @@
 
     &__boton {
         width: 100%;
-        background: $firstColor;
-        @include var(background, firstColor);
+        background: $buttonColor;
+        @include var(background, buttonColor);
         font-size:1.2rem;
         color:#fff;
         cursor: pointer;

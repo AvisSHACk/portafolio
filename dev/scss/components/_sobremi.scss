@@ -1,18 +1,28 @@
 .Sobremi {
+    margin-bottom: 4rem;
     @include from(medium) {
         width: 70%;
         justify-self: center;
     }
-
+    
     @include from(large) {
         width: 100%;
         justify-self: start;
+        margin-bottom: 4rem;
     }
 
-    &__title, &__descripcion {
-        text-align: center;
+    &__descripcion {
         @include from(large) {
             text-align: left;
+        }
+    }
+
+    &__title {
+        margin-left: auto;
+        margin-right: auto;
+        @include from(large) {
+            margin-left: 0;
+            margin-right: 0;
         }
     }
 
@@ -24,8 +34,8 @@
         margin-right: auto;
         text-decoration: none;
         margin-top: 20px;
-        background: $firstColor;
-        @include var(background, firstColor);
+        background: $buttonColor;
+        @include var(background, buttonColor);
         color:#fff;
 
         @include from(large) {

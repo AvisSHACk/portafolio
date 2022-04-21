@@ -1,13 +1,17 @@
 $vars:(
-    firstColor:#5352ed,
-    secondColor: #2f3542,
+    firstColor:#1e1e1e,
+    secondColor: #252526,
     borderColor:#BEBEBE,
+    borderColor2: #747D8C,
+    buttonColor:#007acc,
     textColor:#fff
 );
 
 $firstColor:map-get($vars, firstColor);
 $secondColor:map-get($vars, secondColor);
+$buttonColor:map-get($vars, buttonColor);
 $borderColor: map-get($vars, borderColor);
+$borderColor2: map-get($vars, borderColor2);
 $textColor:map-get($vars, textColor);
 
 :root {
