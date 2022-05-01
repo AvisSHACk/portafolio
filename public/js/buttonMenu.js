@@ -6,6 +6,13 @@ const buttonMenu = () => {
         menu.classList.toggle("active");
         document.body.classList.toggle("menuActive");
     })
+
+    window.addEventListener("click", (e) => {
+        if(menu.classList.contains('active') && e.target !== menu && e.target !== button) {
+            menu.classList.toggle("active");
+            document.body.classList.toggle("menuActive");
+        }
+    })
 }
 
 export default buttonMenu;

@@ -1,6 +1,5 @@
 .Portafolio {
     padding-bottom: 4rem;
-    padding-top: 4rem;
     // background: $secondColor;
     // @include var(background, secondColor);
     
@@ -14,6 +13,10 @@
         display: flex;
         flex-direction: column;
         margin-bottom: 3rem;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
 
         @include from(medium) {
             display: flex;

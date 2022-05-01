@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anthony Serquén</title>
+    <title>Anthony Serquén | Desarrollador Front End</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
         <nav class="Nav">
             <ul class="Nav__container">
                 <li class="Nav__item"><a href="#me" class="Nav__link">Sobre mí</a></li>
-                <li class="Nav__item"><a href="#me" class="Nav__link">Habilidades</a></li>
+                <li class="Nav__item"><a href="#habilidades" class="Nav__link">Habilidades</a></li>
                 <li class="Nav__item"><a href="#portafolio" class="Nav__link">Portafolio</a></li>
                 <li class="Nav__item"><a href="#contacto" class="Nav__link">Contacto</a></li>
             </ul>
@@ -25,12 +25,12 @@
         <img class="Header__banner" src="img/banner.jpg" alt="">
         <div class="Header__infocontainer">
             <h1 class="title-section h1">Hola, Soy anthony</h1>
-            <h2 class="title-section h2">Desarrollador Web Front End</h2>
+            <h2 class="title-section h2">&#60; Desarrollador Web Front End &#47;&#62;</h2>
         </div>
     </header>
-    <section class="Me" id="me">
+    <section class="Me">
         <div class="l-container--row">
-            <div class="Sobremi">
+            <div class="Sobremi" id="me">
                 <h3 class="Sobremi__title h3">Sobre mí</h3>
                 <p class="Sobremi__descripcion">
                     Hola, soy estudiante de ETI SENATi, estoy cursando el 5° Semestre de la carrera de 
@@ -40,7 +40,7 @@
                 </p>
                 <a href="#" class="Sobremi__boton">Descargar CV</a>
             </div>
-            <div class="Habilidades">
+            <div class="Habilidades" id="habilidades">
                 <h3 class="Habilidades__title h3">Habilidades</h3>
                 <div class="Habilidades__imagesContainer">
                     <figure class="Habilidades__imageContainer">
@@ -114,19 +114,34 @@
 
                 <div class="Portafolio__trabajoContainer">
                     <figure class="Portafolio__imageContainer">
-                        <img class="Portafolio__image" src="img/portafolio1.png" alt="">
+                        <img class="Portafolio__image" src="img/portafolio2.png" alt="">
                     </figure>
                     <div class="Portafolio__info">
-                        <h4 class="Portafolio__trabajoTitle"><b>Titulo:</b> TheAnimeDatabase</h4>
+                        <h4 class="Portafolio__trabajoTitle"><b>Titulo:</b> HimeTV</h4>
                         <p class="Portafolio__trabajoDescripcion">
-                            <b>Descripcion:</b>  TheAnimeDatabase es una simple aplicacion que te muestra la 
-                            informacion de la serie que busques, esta informacion desde una API llamada 
-                            JiikanMoe, una api no oficial de MyAnimeList. La aplicacion tiene la 
-                            posibilidad de crear una cuenta y logearse con la misma pudiendo asi 
-                            seleccionar que series quieres agregar a tus favoritos.
+                            <b>Descripcion:</b>  HimeTV es una plataforma de anime el cual te ofrece poder ver series de anime
+                            mediante un reproductor, te ofrece una lista de series el cual puedes elegir.
+                            Personalmente espero que este proeycto propio pueda ver la luz en un futuro.
                         </p>
-                        <p class="Portafolio__trabajoDescripcion"><b>Tecnologias usadas:</b> React, React-router V6, Firebase</p>
+                        <p class="Portafolio__trabajoDescripcion"><b>Tecnologias usadas:</b> HTML, CSS, Javascript, PHP, MySql</p>
                         <a href="#" class="Portafolio__trabajoBoton">Ver mas</a>
+                    </div>
+                </div>
+
+                <div class="Portafolio__trabajoContainer">
+                    <figure class="Portafolio__imageContainer">
+                        <img class="Portafolio__image" src="img/portafolio3.png" alt="">
+                    </figure>
+                    <div class="Portafolio__info">
+                        <h4 class="Portafolio__trabajoTitle"><b>Titulo:</b> App TodoList</h4>
+                        <p class="Portafolio__trabajoDescripcion">
+                            <b>Descripcion:</b>  Una aplicacion de lista de tareas tipica, se hizo como practica a nivel personal 
+                            para ir solidificando mis conocimientos adiquiridos en reactJS. Esta aplicacion cumple con el crud tipico,
+                            crea tareas, edita tareas, lee las tareas para poder mostrarse en una lista y elimina la/las tareas, en un recuadro
+                            se puede especificar que la tarea esta completada y tiene filtros de mostrar completados.
+                        </p>
+                        <p class="Portafolio__trabajoDescripcion"><b>Tecnologias usadas:</b> ReactJS, Styled Components</p>
+                        <a href="https://scintillating-peony-c4252c.netlify.app/" class="Portafolio__trabajoBoton">Ver mas</a>
                     </div>
                 </div>
             </div>
